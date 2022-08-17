@@ -1,0 +1,248 @@
+  .box {
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background: linear-gradient(0deg, #397ef6 10px, transparent 10px);
+    background-repeat: no-repeat;
+    background-position: 0 0.62em;
+    box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
+    border-radius: 0.5em;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .box .icon {
+    font-size: 2.5em;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    background-color: #397ef6;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+  }
+  .icon:before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid #397ef6;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  .box h3 {
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #070024;
+  }
+  .box p {
+    line-height: 2em;
+    color: #625a71;
+  }
+  .box:hover {
+    background-position: 0;
+  }
+
+  .card-body{
+    cursor: pointer;
+  }
+  .box:hover .icon:before {
+    height: 2.25em;
+    width: 2.25em;
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .box {
+      padding: 5em 2em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
+
+  #target{
+    width: 442px;
+    height: 442px;
+    background-color: #80D8FF;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+}
+
+#target3{
+  width: 62px;
+  height: 62px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 200px;
+margin-top: 3px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#targettext{
+    width: 100%;
+    text-align: center;
+}
+#target1{
+  width: 470px;
+  height: 470px;
+  background-color: #BEC8DD;
+  border-radius: 50%;
+  margin-top: -330px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+
+}
+
+#target2{
+  width: 366px;
+  height: 366px;
+  background-color: #4D9AD4;
+  border-radius: 50%;
+  margin-top: -173px;
+  margin-left: 430px;
+  display: flex;
+  align-items: center;
+
+}
+
+
+html,body, .wrapper { height: 90%; }
+.wrapper { position: relative; }
+.top { height: 5%; background: #EDF0F6; }
+.mid { height: 50%; background: #3B5998; }
+.bot { height: 20%; background: #EDF0F6; }
+
+
+.im {
+  float: left;
+  width: 42%;
+  height: 250px;
+  padding: 1%;
+}
+.im:first-child {
+  background: #EEE;
+  float: left;
+  width: 54%;
+}
+
+.right{
+  color: #4D9AD4;
+  width: 40%;
+}
+
+.left{
+  color: #4D9AD4;
+  margin: auto;
+  margin-left:300px;
+  margin-top: -21px;
+}
+
+/* footer */
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer{
+  background-color: #24262b;
+  padding: 50px 10px;
+
+}
+
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 0 10px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+  
+.tn{
+  display: inline-block;
+  height: 20px;
+  margin: 30px;
+  padding: 2px;
+}
+#text,
+#icon {
+  line-height: 5px;
+  
+}
+#icon {
+  vertical-align: middle;
+  font-size: 18px;
+}
+#text{
+  font-weight: 100;
+}
+
+@media(max-width:767px){
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+@media (max-width:574px) {
+  .footer-col{
+      width: 100%;
+  }
+}
+}
